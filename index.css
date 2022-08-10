@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 55px;
+}
+
+/* Link Decoration */
+a {
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+}
+
+/* nav bar Decoration */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 247, 252);
+    padding: 10px;
+    box-shadow: -41px -60px 17px 56px rgb(49, 47, 47);
+}
+
+/* All UL list Decoration */
+ul {
+    list-style: none;
+}
+
+/* Ul Left Side Margin */
+.left {
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+/* UL image Decoration */
+.logo img {
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.text img {
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    padding: 10px 0px 0px 10px;
+    margin-top: 4px;
+}
+
+
+/* UL right side Decoration */
+.right {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/* UL right side li decoration */
+.right li {
+    margin: 5px 30px 0px 50px;
+    color: rgb(39, 37, 37);
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* UL right side under Decoration start*/
+.right li .home {
+    width: 2px;
+    height: 3px;
+    background-color: #004aad;
+    opacity: 0;
+    transition: width 0.5s ease-in-out, opacity 5ms linear;
+
+}
+
+.right li .category {
+    width: 2px;
+    height: 3px;
+    background-color: #004aad;
+    opacity: 0;
+    transition: width 0.5s ease-in-out, opacity 5ms linear;
+}
+
+.right li .about {
+    width: 2px;
+    height: 3px;
+    background-color: #004aad;
+    opacity: 0;
+    transition: width 0.5s ease-in-out, opacity 5ms linear;
+}
+
+.right li .contact {
+    width: 2px;
+    height: 3px;
+    background-color: #004aad;
+    opacity: 0;
+    transition: width 0.5s ease-in-out, opacity 5ms linear;
+}
+
+/* UL right side under Decoration end*/
+
+/* Category Dropdown Menu for right li start */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: rgb(39, 37, 37);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(243, 247, 252);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(26, 25, 25);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(225, 240, 241);
+}
+
+.show {
+    display: block;
+}
+
+/* Category Dropdown Menu for right li start */
+
+/* Link Hover */
+.right a:hover {
+    color: #00abff;
+}
+
+/* Dropdown Hover */
+.right .dropbtn:hover {
+    color: #00abff;
+}
+
+/* UL Line Hover */
+.right li:hover .home {
+    opacity: 1;
+    width: 48px;
+}
+
+.right li:hover .category {
+    opacity: 1;
+    width: 88px;
+}
+
+.right li:hover .about {
+    opacity: 1;
+    width: 74px;
+}
+
+.right li:hover .contact {
+    opacity: 1;
+    width: 88px;
+}
+
+/* Welcome Part */
+.welcome {
+    margin-top: 15px;
+    background-image: url('MainBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 80vh;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome .anime {
+    border-radius: 200px;
+    margin-left: 60px;
+    opacity: 0.8;
+}
+
+.welcome h1 {
+    width: 550px;
+    align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-size: 60px;
+    opacity: 1;
+    animation: opacity 2s forwards 1ms 1;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.pushable {
+    background: rgb(116, 94, 0);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 2px;
+    margin: 50px 0px 0px 180px;
+}
+
+.front {
+    display: block;
+    padding: 10px 30px;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    background: rgb(255, 209, 3);
+    color: rgb(46, 41, 41);
+    transform: translateY(-6px);
+    transition: transform 500ms ease-in-out;
+}
+
+.pushable:active .front,
+.pushable:hover .front {
+    transform: translateY(-2px);
+}
+
+/* Slide Show */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 0 20px;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* Selectors */
+#selectors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 20px;
+}
+
+#selectors .school,
+.college,
+.novel {
+    width: 100%;
+    height: 576px;
+}
+
+/* School back image */
+#selectors .school {
+    background-image: url('school_student.png');
+    background-repeat: no-repeat;
+    background-size: 100% 576px;
+    display: flex;
+    align-items: center;
+}
+
+/* College back image*/
+#selectors .college {
+    background-image: url('college_students.png');
+    background-repeat: no-repeat;
+    background-size: 100% 576px;
+}
+
+/* College1 back image */
+#selectors .college1 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Novel back image */
+#selectors .novel {
+    background-image: url('novels_study.png');
+    background-repeat: no-repeat;
+    background-size: 100% 576px;
+    display: flex;
+    align-items: center;
+}
+
+#selectors .college h2 {
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(28, 3, 255);
+    text-shadow: #FC0 1px 0 10px;
+}
+
+/* School,college,novel Box */
+
+#selectors .school .first,
+#selectors .college1 .first,
+#selectors .novel .first {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 20px 5px rgb(2, 32, 32);
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+}
+
+#selectors .school .first img,
+#selectors .college1 .first img,
+#selectors .novel .first img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#selectors .school .first .lower a img,
+#selectors .college1 .first .lower a img,
+#selectors .novel .first .lower a img {
+    width: 20px;
+    height: 20px;
+}
+
+#selectors .school .first .lower,
+#selectors .college1 .first .lower,
+#selectors .novel .first .lower {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(4, 0, 39);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#selectors .lower h1,
+p {
+    margin-top: 10px;
+}
+
+#selectors .lower button {
+    margin-top: 40px;
+}
+
+#selectors .school .first .lower button,
+button a,
+#selectors .college1 .first .lower button,
+button a,
+#selectors .novel .first .lower button,
+button a {
+    background-color: transparent;
+    border-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(4, 0, 39);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Selectors hover effect */
+#selectors .school .first {
+    background-color: #ef6079ff;
+}
+
+#selectors .college1 .first {
+    background-color: #fcbf49;
+}
+
+#selectors .novel .first {
+    background-color: #adefd1ff;
+}
+
+#selectors .school .first .lower:hover,
+#selectors .school .first .lower:hover button a,
+#selectors .college1 .first .lower:hover,
+#selectors .college1 .first .lower:hover button a,
+#selectors .novel .first .lower:hover,
+#selectors .novel .first .lower:hover button a {
+    color: rgb(5, 0, 101);
+}
+
+#selectors .school .first:hover,
+#selectors .college1 .first:hover,
+#selectors .novel .first:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #131376;
+    color: white;
+    padding: 20px;
+}
+
+.footer .ft{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .ab{
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(237, 237, 237);
+    font-size: 15px;
+}
+
+.footer .ab a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(154, 149, 149);
+    font-size: 20px;
+}
+
+.footer .con{
+    width: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(237, 237, 237);
+    font-size: 15px;
+}
+
+.footer .con a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(154, 149, 149);
+    font-size: 20px;
+}
+
+.footer .con .mail{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(240, 240, 240);
+    font-size: 15px;
+}
+
+.footer .con .mail:hover{
+    color: #FC0;
+}
+
+.footer p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+    padding-top: 10px;
+}
+.footer .img{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    padding: 20px;
+}
+
+.footer .img img{
+    width: 48px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

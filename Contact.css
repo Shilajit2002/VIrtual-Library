@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 55px;
+}
+
+/* Link Decoration */
+a {
+  text-decoration: none;
+  color: rgb(26, 25, 25);
+}
+
+/* nav bar Decoration */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(243, 247, 252);
+  padding: 10px;
+  box-shadow: -41px -60px 17px 56px rgb(49, 47, 47);
+}
+
+/* All UL list Decoration */
+ul {
+  list-style: none;
+}
+
+/* Ul Left Side Margin */
+.left {
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+/* UL image Decoration */
+.logo img {
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.text1 img {
+  width: 200px;
+  height: 25px;
+  cursor: pointer;
+  padding: 10px 0px 0px 10px;
+  margin-top: 4px;
+}
+
+
+/* UL right side Decoration */
+.right {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+/* UL right side li decoration */
+.right li {
+  margin: 5px 30px 0px 50px;
+  color: rgb(39, 37, 37);
+  border-radius: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* UL right side under Decoration start*/
+.right li .home {
+  width: 2px;
+  height: 3px;
+  background-color: #004aad;
+  opacity: 0;
+  transition: width 0.5s ease-in-out, opacity 5ms linear;
+
+}
+
+.right li .category {
+  width: 2px;
+  height: 3px;
+  background-color: #004aad;
+  opacity: 0;
+  transition: width 0.5s ease-in-out, opacity 5ms linear;
+}
+
+.right li .about {
+  width: 2px;
+  height: 3px;
+  background-color: #004aad;
+  opacity: 0;
+  transition: width 0.5s ease-in-out, opacity 5ms linear;
+}
+
+.right li .contact {
+  width: 2px;
+  height: 3px;
+  background-color: #004aad;
+  opacity: 0;
+  transition: width 0.5s ease-in-out, opacity 5ms linear;
+}
+
+/* UL right side under Decoration end*/
+
+/* Category Dropdown Menu for right li start */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: rgb(39, 37, 37);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(243, 247, 252);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(26, 25, 25);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(225, 240, 241);
+}
+
+.show {
+  display: block;
+}
+
+/* Category Dropdown Menu for right li start */
+
+/* Link Hover */
+.right a:hover {
+  color: #00abff;
+}
+
+/* Dropdown Hover */
+.right .dropbtn:hover {
+  color: #00abff;
+}
+
+/* UL Line Hover */
+.right li:hover .home {
+  opacity: 1;
+  width: 48px;
+}
+
+.right li:hover .category {
+  opacity: 1;
+  width: 88px;
+}
+
+.right li:hover .about {
+  opacity: 1;
+  width: 74px;
+}
+
+.right li:hover .contact {
+  opacity: 1;
+  width: 88px;
+}
+
+
+.m {
+padding-top: 50px;
+  background-color: #E2E6EB;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  color: #1B1C34;
+  display: flex;
+  align-items: flex-end;
+}
+
+.container {
+  max-width: 1800px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  height: 100%;
+  justify-content: center;
+}
+
+.container h1 {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #00abff;
+  text-shadow: 0 1px 2px #011024;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 3%;
+  margin: 5% 0;
+}
+
+.card {
+  overflow: hidden;
+  padding: 20px;
+  background: linear-gradient(171.38deg, #F9FBFC 3.36%, #E2EAF5 95.69%);
+  box-shadow: 0px 0px 20px rgba(227, 235, 246, 0.3);
+  border-radius: 30px;
+  text-align: center;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out,box-shadow 0.5s ease-in-out;
+}
+
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(146, 181, 230, 0.591);;
+}
+
+.card_img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card_body {
+  padding: 26px 10px 36px 10px;
+  
+}
+
+.card_title {
+  font-weight: 800;
+  text-transform: capitalize;
+  color: #25262C;
+  font-size: 16.5px;
+  padding-bottom: 15px;
+}
+
+.designation {
+  font-weight: 700;
+  font-size: 14.5px;
+  color: #959EAF;
+}
+
+.container a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container h4{
+  padding: 10px 0px 10px 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #1f2036;
+}
+
+.container h4 a{
+  color: #014a4f;
+}
+
+.container h4 a:hover{
+  color: #0a2123;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .card_title {
+    font-size: 24px;
+  }
+
+  .designation {
+    font-size: 18px;
+  }
+
+}
+
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #131376;
+  color: white;
+  padding-top: 20px;
+}
+
+.footer .ft{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .ab{
+  width: 50%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(237, 237, 237);
+  font-size: 15px;
+}
+
+.footer .ab a{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(154, 149, 149);
+  font-size: 20px;
+}
+
+.footer .con{
+  width: 20%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(237, 237, 237);
+  font-size: 15px;
+}
+
+.footer .con a{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(154, 149, 149);
+  font-size: 20px;
+}
+
+.footer .con .mail{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(240, 240, 240);
+  font-size: 15px;
+}
+
+.footer .con .mail:hover{
+  color: #FC0;
+}
+
+.footer p{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: beige;
+  padding-top: 10px;
+}
+.footer .img{
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  padding: 20px;
+}
+
+.footer .img img{
+  width: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
